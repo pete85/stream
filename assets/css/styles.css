@@ -1,31 +1,38 @@
 @font-face {
-    font-family: avantGarde;
-    src: url(assets/fonts/avantgardegothic.otf);
+    font-family: 'avantGarde';
+    src: url('../assets/fonts/avantgardegothic.otf');
 }
 
-p {
-	font-size: 20px;
-	font-family: avantGarde;
+body {
+	font-family: 'avantGarde';
 }
 
-.topBar {
-	background: #E6E6E6;
+h1 {font-size: 33px;}
+h2 {font-size: 28px;}
+p {font-size: 20px;}
+
+.logo img {
+	width: 50%;
+	max-width: 100%;
 }
 
-.topBar p, .topBar span {padding:10px;}
 
-.topBar p {
-	color: #FF0000;
-}
+.topBar {background: #E6E6E6;}
+
+.topBar p, .topBar span, .blockRed, .blockBlue {padding:15px;}
+.topBar p {color: #FF0000;}
 
 .topBar span {
-	font-size: 26px;
+	font-size: 30px;
 	color: #000000;
 }
 
-.voucher {
+.blockRed {
 	background: rgba(255, 0, 0, .4); 
-	padding: 10px;
+}
+
+.blockBlue {
+	background: rgba(41, 171, 226, .4); 
 }
 
 
