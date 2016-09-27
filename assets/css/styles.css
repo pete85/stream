@@ -1,0 +1,48 @@
+@font-face {
+    font-family: avantGarde;
+    src: url(assets/fonts/avantgardegothic.otf);
+}
+
+p {
+	font-size: 20px;
+	font-family: avantGarde;
+}
+
+.topBar {
+	background: #E6E6E6;
+}
+
+.topBar p, .topBar span {padding:10px;}
+
+.topBar p {
+	color: #FF0000;
+}
+
+.topBar span {
+	font-size: 26px;
+	color: #000000;
+}
+
+.voucher {
+	background: rgba(255, 0, 0, .4); 
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
