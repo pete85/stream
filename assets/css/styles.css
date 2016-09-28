@@ -1,49 +1,159 @@
-@font-face {
-    font-family: 'avantGarde';
-    src: url('../assets/fonts/avantgardegothic.otf');
-}
+/*@font-face {
+    font-family: 'Abel';
+    src: url('https://fonts.googleapis.com/css?family=Abel');
+}*/
 
 body {
-	font-family: 'avantGarde';
+	font-family: 'Abel', sans-serif;
+	font-size: 22px;
 }
 
-h1 {font-size: 33px;}
-h2 {font-size: 28px;}
-p {font-size: 20px;}
+h1 {font-size: 38px; font-weight: 800;}
+h2 {font-size: 35px; font-weight: 800;}
+h3 {font-size: 30px; font-weight: 800;}
+p, .form-control, .form-horizontal .control-label {
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.topBar {padding: 15px; margin: 0 0 15px 0;}
+
+.topBar, .footer, #dealerLoginForm {background: #E6E6E6;}
+
+.topBar p {
+	color: #FF0000;
+	display: inline;
+	padding:15px;
+}
+
+/*** Logos & dealer form ***/
 
 .logo img {
-	width: 50%;
+	width: 80%;
 	max-width: 100%;
 }
 
+.logoSection {
+	margin: 20px 0 80px 0;
+}
 
-.topBar {background: #E6E6E6;}
+#dealerLoginForm {padding: 10px 15px;}
 
-.topBar p, .topBar span, .blockRed, .blockBlue {padding:15px;}
-.topBar p {color: #FF0000;}
+#dealerLoginForm .form-group {margin-bottom: 0;}
 
-.topBar span {
-	font-size: 30px;
+.dealerText {width: 60%;}
+.dealerSubmit {width: 35%;}
+
+.dealerText, .dealerSubmit {display: inline;}
+
+#dealerID, #dealerPassword, #dealerFormSubmit {
+	height: 35px;
+	font-size: 15px;
+}
+
+#renaultTopLogo {padding-right:0;}
+
+/*** Logos & dealer form END ***/
+
+/*** CTA ***/
+
+.cta {
+	background: #FF0000;
+	color: #FFFFFF;
+	padding: 5px 15px;
+	border: 1px solid #FF0000;
+	-webkit-border-radius: 45px;
+	-moz-border-radius: 45px;
+	border-radius: 45px;
+}
+
+#downloadVouchers {float: right;}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+/*** CTA END ***/
+
+
+.topBar span, .footer span {
+	font-size: 33px;
 	color: #000000;
 }
 
-.blockRed {
-	background: rgba(255, 0, 0, .4); 
+.blockRed {background: rgba(255, 0, 0, .4);}
+.blockBlue {background: rgba(41, 171, 226, .4);}
+.blockGrey {background: #E6E6E6;}
+.blockWithBorder {border: solid 1px #E6E6E6;}
+
+.blockRed h3, .blockBlue h3, .downloadAnchor {color: #FFFFFF;}
+
+#about p {
+	column-count: 2;
+	column-gap: 20px;
 }
 
-.blockBlue {
-	background: rgba(41, 171, 226, .4); 
+#signUpForm {background: #FF0000;}
+
+.footer, .blockRed, .blockBlue, .blockGrey, #signUpForm, .blockWithBorder, .contactForm  {
+	padding:15px;
+	margin:15px 0;
+}
+
+/*** Fixed height classes ***/
+
+@media screen and (min-width: 860px) {
+	.div200 {height:200px;}	
+	.div250	{height:250px;}	
+	.div300	{height:300px;}	
+	.div350	{height:350px;}
+	.div400	{height:400px;}
+	.div450	{height:450px;}		
+	.div500	{height:500px;}
+	.div600	{height:600px;}	
+	.div650	{height:650px;}
+	.div700	{height:700px;}
+	.div800	{height:800px;}
+	
+}
+
+/*** Fixed height classes END ***/
+
+
+.centeredText {
+    width: 100%;
+    margin: auto;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
 }
 
 
+/***  Footer ***/
 
+.footer p {color: #FF0000;}
 
+.form-horizontal .control-label {
+	text-align: left;
+}
 
+.form-control {
+	height: 50px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
 
+.links span {margin:0 20px;}
 
-
-
-
+.renaultLogo img {float: right; margin-bottom: 15px;}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) { ... }
