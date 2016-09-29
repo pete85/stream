@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Stream test - Bootstrap version</title>
+	<title>Stream test 1</title>
 
 	<link rel="stylesheet" href="assets/css/normalize.css">
 
@@ -28,20 +28,19 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="topBar">
-					<p>General Enquiries <span>01234 567 890</span></p>
-					<p>Email <span>info@parts4u.co.uk</span></p>
+					<p>General Enquiries <span>01234 567 890</span> Email <span>info@parts4u.co.uk</span></p>
 				</div>
 			</div>
 		</div>
 
 		<!-- Logo & login -->
 		<div class="row logoSection">
-			<div class="col-md-5">
+			<div class="col-md-5 col-sm-12">
 				<div class="logo">
 					<a href="#"><img alt="logo" src="assets/images/logo.jpg"/></a>
 				</div>
 			</div>
-			<div class="col-md-5" id="dealerLogin">
+			<div class="col-md-5 col-sm-10 col-xs-12" id="dealerLogin">
 				<div class="login">
 					<form id="dealerLoginForm">							
 						<p>Dealer login</p>
@@ -55,7 +54,7 @@
 					</form>
 				</div>
 			</div>
-			<div class="col-md-2" id="renaultTopLogo">
+			<div class="col-md-2 col-sm-2 hidden-xs" id="renaultTopLogo">
 				<div class="renaultLogo">
 					<img alt="Renault logo top" src="assets/images/renaultTrucksDeliver.jpg"/>
 				</div>
@@ -65,11 +64,9 @@
 
 		<!-- Download button -->
 		<div class="row">
-			<div class="col-md-10"></div>
-			<div class="col-md-2">
-					<form>						
-						<input class="form-control" type="submit" value="Download all vouchers &#8595;" id="dealerFormSubmit">
-					</form>
+			<div class="col-md-9"></div>
+			<div class="col-md-3">
+				<a class="cta rightFloat" href="#">Download all vouchers &#8595;</a>
 			</div>
 		</div>
 
@@ -82,10 +79,10 @@
 						<h3>Exclusively for PARTS4U</h3>
 					</div>
 					<div class="centeredText">
-						<h1>TEXT</h1>
+						<h1>£50 off<br/>Clutch</h1>
 					</div>
 					<div class="voucherLinkDiv">
-						<a class="btn" id="downloadVoucherLink" href="#">View details &raquo;</a>
+						<h3><a href="#">Download voucher</a></h3>
 					</div>
 				</div>
 			</div>
@@ -108,15 +105,26 @@
 		<div class="row">
 			<div class="col-md-7">
 				<div class="blockGrey div400" id="about">
-					<h3>About PARTS4U</h3>
+					<h1>About PARTS4U</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel pellentesque diam. Curabitur non diam vehicula, dapibus enim ac, blandit tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis tellus. Maecenas blandit urna enim, nec aliquam enim finibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel pellentesque diam. Curabitur non diam vehicula, dapibus enim ac, bunc sodales facilisis suscipit. Morbi mattiser euismod lectus, quis interdum tortor congue sit amet. Maecenas blandit urna enim, nec aliquam enim finibus id.</p>
 				</div>
 			</div>
 			<div class="col-md-5">
 				<div id="signUpForm" class="div400">
-					<h3>Exclusively for PARTS4U</h3>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-					<a class="btn" id="downloadVoucherLink" href="#">View details &raquo;</a>
+					<h1>Join PARTS4U for Free</h1>
+					<h3><a class="cta-white" href="#">Sign up</a></h3>
+					<form id="memberForm">							
+						<h1>Already a member?</h1>
+						<div class="form-group">
+							<div class="col-sm-8">
+								<input class="form-control memberText" type="email" id="memberEmail" placeholder="Email">
+							</div>
+							<div class="col-sm-4">	
+								<input class="form-control memberSubmit" type="submit" value="Verify" id="memberFormSubmit">
+							</div>
+						</div>
+					</form>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel pellentesque diam. Curabitur nconqu.</p>
 				</div>
 			</div>
 		</div>

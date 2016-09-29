@@ -8,18 +8,21 @@ body {
 	font-size: 22px;
 }
 
-h1 {font-size: 38px; font-weight: 800;}
-h2 {font-size: 35px; font-weight: 800;}
-h3 {font-size: 30px; font-weight: 800;}
+h1 {font-size: 42px;}
+h2 {font-size: 38px;}
+h3 {font-size: 32px;}
 p, .form-control, .form-horizontal .control-label {
 	font-size: 22px;
 	font-weight: 700;
 }
 
-.h1, .h2, .h3, h1, h2, h3 {
+h1, h2, h3 {
 	margin-top: 5px;
 	margin-bottom: 10px;
+	font-weight: 900;
 }
+
+.rightFloat {float: right;}
 
 .topBar {padding: 15px; margin: 0 0 15px 0;}
 
@@ -27,7 +30,6 @@ p, .form-control, .form-horizontal .control-label {
 
 .topBar p {
 	color: #FF0000;
-	display: inline;
 	padding:15px;
 }
 
@@ -46,11 +48,6 @@ p, .form-control, .form-horizontal .control-label {
 
 #dealerLoginForm .form-group {margin-bottom: 0;}
 
-.dealerText {width: 60%;}
-.dealerSubmit {width: 35%;}
-
-.dealerText, .dealerSubmit {display: inline;}
-
 #dealerID, #dealerPassword, #dealerFormSubmit {
 	height: 35px;
 	font-size: 15px;
@@ -62,15 +59,44 @@ p, .form-control, .form-horizontal .control-label {
 
 /*** CTA ***/
 
+.cta, .cta-white {
+	padding: 15px;
+	border: 0px solid #FF0000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	display: block;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+.cta:hover, .cta:visited, .cta:active, .cta-white:hover, .cta-white:visited, .cta-white:active {text-decoration: none;}
+
 .cta {
 	background: #FF0000;
 	color: #FFFFFF;
-	padding: 5px 15px;
-	border: 1px solid #FF0000;
-	-webkit-border-radius: 45px;
-	-moz-border-radius: 45px;
-	border-radius: 45px;
 }
+
+.cta:hover, .cta:visited, .cta:active {
+	color: #FFFFFF;
+	background: rgba(255, 0, 0, .4);	
+}
+
+.cta-white {
+	background: #FFFFFF;
+	color: #FF0000;
+	width: 100%;
+}
+
+.cta-white:hover, .cta-white:visited, .cta-white:active {
+	color: #FF0000;
+	background: #E3E2E1;	
+}
+
+
+/*** CTA END ***/
+
 
 #downloadVouchers {float: right;}
 
@@ -80,7 +106,6 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     margin-bottom: 10px;
 }
 
-/*** CTA END ***/
 
 
 .topBar span, .footer span {
@@ -88,7 +113,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 	color: #000000;
 }
 
-.blockRed {background: rgba(255, 0, 0, .4);}
+.blockRed {background: rgba(255, 0, 0, .4); position: relative;}
 .blockBlue {background: rgba(41, 171, 226, .4);}
 .blockGrey {background: #E6E6E6;}
 .blockWithBorder {border: solid 1px #E6E6E6;}
@@ -97,10 +122,30 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
 #about p {
 	column-count: 2;
-	column-gap: 20px;
+	column-gap: 35px;
 }
 
-#signUpForm {background: #FF0000;}
+#signUpForm {
+	background: #FF0000;
+	color: #FFFFFF;
+}
+
+#memberFormSubmit {
+	background: #B3B3B3;
+}
+
+#memberForm {margin-top: 20px;}
+
+#memberForm .col-sm-8 {
+	padding-left: 0;
+	padding-right: 5px;
+}
+
+#memberForm .col-sm-4 {
+	padding-left: 5px;
+	padding-right: 0;
+}
+
 
 .footer, .blockRed, .blockBlue, .blockGrey, #signUpForm, .blockWithBorder, .contactForm  {
 	padding:15px;
@@ -109,22 +154,41 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
 /*** Fixed height classes ***/
 
-@media screen and (min-width: 860px) {
-	.div200 {height:200px;}	
-	.div250	{height:250px;}	
-	.div300	{height:300px;}	
-	.div350	{height:350px;}
-	.div400	{height:400px;}
-	.div450	{height:450px;}		
-	.div500	{height:500px;}
-	.div600	{height:600px;}	
-	.div650	{height:650px;}
-	.div700	{height:700px;}
-	.div800	{height:800px;}
-	
-}
+.div200 {height:200px;}	
+.div250	{height:250px;}	
+.div300	{height:300px;}	
+.div350	{height:350px;}
+.div400	{height:400px;}
+.div450	{height:450px;}		
+.div500	{height:500px;}
+.div600	{height:600px;}	
+.div650	{height:650px;}
+.div700	{height:700px;}
+.div800	{height:800px;}
 
 /*** Fixed height classes END ***/
+
+
+
+.centeredText, .voucherHeading, .voucherLinkDiv {
+	height:33%;
+}
+
+.centeredText {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+.voucherLinkDiv {
+	text-align: right;
+}
+
+.voucherLinkDiv h3 {
+	position: absolute;
+	bottom: 0;
+	right: 15px;
+}
 
 
 /*.centeredText {
@@ -176,13 +240,61 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
 .links span {margin:0 20px;}
 
-.renaultLogo img {float: right; margin-bottom: 15px;}
+.renaultLogo img {
+	width: 120px;
+	margin: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { ... }
+@media (min-width: 768px) { ... }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
+@media (min-width: 992px) {
+
+	/*** Logos & dealer form ***/
+
+/*	.logo img {
+		width: 80%;
+		max-width: 100%;
+	}
+
+	.logoSection {
+		margin: 20px 0 80px 0;
+	}*/
+
+	#dealerLoginForm {padding: 10px 15px;}
+
+	#dealerLoginForm .form-group {margin-bottom: 0;}
+
+	.dealerText {width: 60%;}
+	.dealerSubmit {width: 35%;}
+
+	.dealerText, .dealerSubmit, .memberText, .memberSubmit {display: inline;}
+
+	#dealerID, #dealerPassword, #dealerFormSubmit {
+		height: 35px;
+		font-size: 15px;
+	}
+
+	.renaultLogo img {float: right; margin-bottom: 15px;}
+
+
+
+}
+
+
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) { ... }
