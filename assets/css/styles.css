@@ -8,52 +8,67 @@ body {
 	font-size: 22px;
 }
 
-h1 {font-size: 42px;}
-h2 {font-size: 38px;}
-h3 {font-size: 32px;}
+h1 {font-size: 50px;}
+h2 {font-size: 40px;}
+h3 {font-size: 34px;}
+h4 {font-size: 24px;}
 p, .form-control, .form-horizontal .control-label {
 	font-size: 22px;
 	font-weight: 700;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	margin-top: 5px;
 	margin-bottom: 10px;
 	font-weight: 900;
 }
 
+.imgResponsive {
+	width: 100%;
+	max-width: 100%;
+}
+
 .rightFloat {float: right;}
 
-.topBar {padding: 15px; margin: 0 0 15px 0;}
+.topBar {
+	padding: 5px;
+	margin-bottom: 0px;
+	text-align: center;
+}
 
-.topBar, .footer, #dealerLoginForm {background: #E6E6E6;}
+.topBar, footer, #dealerLogin form {background: #E6E6E6;}
 
 .topBar p {
 	color: #FF0000;
-	padding:15px;
+	padding:10px;
 }
 
 /*** Logos & dealer form ***/
 
 .logo img {
-	width: 80%;
+	width: 100%;
 	max-width: 100%;
 }
 
 .logoSection {
-	margin: 20px 0 80px 0;
+	padding: 40px 0;
 }
 
-#dealerLoginForm {padding: 10px 15px;}
+#dealerLogin {margin-top:30px;}
 
-#dealerLoginForm .form-group {margin-bottom: 0;}
+#dealerLogin form {padding: 20px;}
+
+#dealerLogin form .form-group {margin-bottom: 0;}
 
 #dealerID, #dealerPassword, #dealerFormSubmit {
 	height: 35px;
 	font-size: 15px;
 }
 
-#renaultTopLogo {padding-right:0;}
+#renaultLogo, #renaultLogo2 {
+	padding: 20px;
+	text-align: center;
+}
 
 /*** Logos & dealer form END ***/
 
@@ -106,24 +121,17 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     margin-bottom: 10px;
 }
 
-
-
-.topBar span, .footer span {
-	font-size: 33px;
+.topBar span, footer span {
+	font-size: 26px;
 	color: #000000;
 }
 
-.blockRed {background: rgba(255, 0, 0, .4); position: relative;}
-.blockBlue {background: rgba(41, 171, 226, .4);}
+.blockRed {background: rgba(255, 0, 0, .5); position: relative;}
+.blockBlue {background: rgba(41, 171, 226, .5); position: relative;}
 .blockGrey {background: #E6E6E6;}
-.blockWithBorder {border: solid 1px #E6E6E6;}
+.blockBorder {border: solid 1px #E6E6E6;}
 
-.blockRed h3, .blockBlue h3, .downloadAnchor {color: #FFFFFF;}
-
-#about p {
-	column-count: 2;
-	column-gap: 35px;
-}
+.blockRed h3, .blockBlue h3, .blockRed h4, .blockBlue h4, .downloadAnchor {color: #FFFFFF;}
 
 #signUpForm {
 	background: #FF0000;
@@ -141,34 +149,12 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 	padding-right: 5px;
 }
 
-#memberForm .col-sm-4 {
-	padding-left: 5px;
-	padding-right: 0;
-}
+.verify {padding:20px;}
 
-
-.footer, .blockRed, .blockBlue, .blockGrey, #signUpForm, .blockWithBorder, .contactForm  {
+footer, .blockRed, .blockBlue, .blockGrey, #signUpForm, .blockBorder, .contactForm  {
 	padding:15px;
 	margin:15px 0;
 }
-
-/*** Fixed height classes ***/
-
-.div200 {height:200px;}	
-.div250	{height:250px;}	
-.div300	{height:300px;}	
-.div350	{height:350px;}
-.div400	{height:400px;}
-.div450	{height:450px;}		
-.div500	{height:500px;}
-.div600	{height:600px;}	
-.div650	{height:650px;}
-.div700	{height:700px;}
-.div800	{height:800px;}
-
-/*** Fixed height classes END ***/
-
-
 
 .centeredText, .voucherHeading, .voucherLinkDiv {
 	height:33%;
@@ -184,48 +170,26 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 	text-align: right;
 }
 
-.voucherLinkDiv h3 {
+.voucherLinkDiv a {
 	position: absolute;
-	bottom: 0;
+	bottom: 15px;
 	right: 15px;
+	color: #FFFFFF;
+	font-size: 22px;
+}
+
+.voucherLinkDiv a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
 }
 
 
-/*.centeredText {
-    width: 100%;
-    margin: auto;
-    text-align:center;
-}*/
-
-/*.blockRed {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-}
-
-.centeredText, .voucherHeading, .voucherLinkDiv {
-    display: table-cell;
-    float: none;
-    height:30%;
-}
-
-.centeredText {
-    vertical-align: middle;
-}
-
-.voucherHeading {
-    vertical-align: top;
-}
-
-.voucherLinkDiv {
-    vertical-align: bottom;
-}*/
 
 
 
 /***  Footer ***/
 
-.footer p {color: #FF0000;}
+footer p {color: #FF0000;}
 
 .form-horizontal .control-label {
 	text-align: left;
@@ -240,7 +204,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
 .links span {margin:0 20px;}
 
-.renaultLogo img {
+#renaultLogo img {
 	width: 120px;
 	margin: auto;
 
@@ -258,25 +222,37 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) {
+
+	.verify {padding:0;}
+	.memberSubmit {margin-left: 5px;}
+}
+
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-	/*** Logos & dealer form ***/
-
-/*	.logo img {
-		width: 80%;
-		max-width: 100%;
+	.topBar {
+		padding: 5px;
+		margin-bottom: 5px;
+		text-align: left;
 	}
 
-	.logoSection {
-		margin: 20px 0 80px 0;
-	}*/
+	.topBar p {display: inline;}
 
-	#dealerLoginForm {padding: 10px 15px;}
+	.topBar span, footer span {
+		font-size: 33px;
+	}
 
-	#dealerLoginForm .form-group {margin-bottom: 0;}
+	.logo img {
+		width: 80%;
+	}
+
+	#dealerLogin {margin-top:0px;}
+	
+	#dealerLogin form {padding: 10px 15px;}
+
+	#dealerLogin form .form-group {margin-bottom: 0;}
 
 	.dealerText {width: 60%;}
 	.dealerSubmit {width: 35%;}
@@ -288,13 +264,41 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 		font-size: 15px;
 	}
 
-	.renaultLogo img {float: right; margin-bottom: 15px;}
+	#renaultLogo, #renaultLogo2 {padding: 0px;}
+
+	#renaultLogo img, #renaultLogo2 img {float: right; margin-bottom: 15px;}
 
 
+	#about, #signUpForm {height: 400px;}
+
+	#about p {
+		column-count: 2;
+		column-gap: 35px;
+	}
 
 }
 
 
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
+@media (min-width: 1200px) {
+
+
+}
+
+
+/*** Fixed height classes ***/
+
+.div200 {height:200px;}	
+.div250	{height:250px;}	
+.div300	{height:300px;}	
+.div350	{height:350px;}
+.div400	{height:400px;}
+.div450	{height:450px;}		
+.div500	{height:500px;}
+.div600	{height:600px;}	
+.div650	{height:650px;}
+.div700	{height:700px;}
+.div800	{height:800px;}
+
+/*** Fixed height classes END ***/
