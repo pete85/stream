@@ -20,11 +20,13 @@
 ## Development
 ### Part 1
 
-[View page] (http://webdeveloperpete.com/stream/)
+[View page] (http://webdeveloperpete.com/stream_1/)
 
 Static version of the page built with Bootstrap framework.
 
 ### Part 2
+
+[View page] (http://webdeveloperpete.com/stream_2/)
 
 #### createJS banner
 
@@ -55,6 +57,13 @@ EXAMPLE
 		  	.to({ alpha: 0, y: 10, x: -110 }, 1500, createjs.Ease.getPowInOut(10))
 ```
 
+#### Keyframe animations
+
+Keyframe animations added to a number of content blocks. On scroll animations are triggered by `WowJS`.
+
+#### Slick slider
+
+Bottom offer vouchers moved from static content blocks into responsive `Slick slider` with autoplay function.
 
 ## License
 MIT
