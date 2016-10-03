@@ -31,7 +31,7 @@ Static version of the page built with Bootstrap framework.
 #### createJS banner
 
 1. Configuration JavaScript (`script.js`) created
-2. `function init()` implemented:
+2. `function initialise()` implemented:
 * Variables declared
 * Stage instance created
 * Objects created and positioned inside the canvas
