@@ -3,7 +3,7 @@
 // JavaScript Document
 
 // EaselJS
-function init() {
+function initialise() {
 
 	// Define variables
 	var stage,

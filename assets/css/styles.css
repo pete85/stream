@@ -364,7 +364,7 @@ footer p {color: #FF0000;}
 /*** SLIDER ***/
 
 .slick-slide {
-	padding: 15px;
+	padding: 15px !important;
 }
 
 .slick-slider button {display: none !important;}

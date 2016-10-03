@@ -102,7 +102,7 @@
 }
 .slick-loading .slick-slide
 {
-    visibility: hidden;
+    visibility: visible;
 }
 .slick-vertical .slick-slide
 {
