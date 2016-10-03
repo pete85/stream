@@ -6,18 +6,30 @@
 
 	<title>Stream test 2</title>
 
-	<link rel="stylesheet" href="assets/css/normalize.css">
-
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+	<!-- createJS library -->
 	<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+
+	<!-- Leaderboard banner -->
 	<script src="assets/js/bannerScript.js"></script>
+	
+	<!-- On-scroll animations -->
+	<script src="assets/js/wow.min.js"></script>
+	<script>
+	new WOW().init();
+	</script>
+
+	<link rel="stylesheet" href="assets/css/normalize.css">
 
 	<link rel="stylesheet" href="assets/css/styles.css">
+
+	<!-- Slick slider -->
+	<link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
 	
 	<!-- Abel font -->
 	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
@@ -80,7 +92,7 @@
 		<div class="row">
 			<div class="col-md-9"></div>
 			<div class="col-md-3">
-				<a class="cta rightFloat" href="#">Download all vouchers &#8595;</a>
+				<a class="cta rightFloat wow fadeInLeft" href="#">Download all vouchers &#8595;</a>
 			</div>
 		</div>
 
@@ -90,7 +102,7 @@
 		<div class="row">
 			<!-- CLUTCH -->
 			<div class="col-md-4">
-				<div class="blockRed div350">
+				<div class="blockRed div350 wow fadeInLeft">
 					<div class="voucherHeading">
 						<h3>Exclusively for PARTS4U</h3>
 					</div>
@@ -104,7 +116,7 @@
 			</div>
 			<!-- BALL BEARINGS -->
 			<div class="col-md-4">
-				<div class="blockBlue div350">
+				<div class="blockBlue div350 wow fadeInUp">
 					<div class="voucherHeading"></div>
 					<div class="centeredText">
 						<h1>10% off<br/>Ball Bearings</h1>
@@ -116,7 +128,7 @@
 			</div>
 			<!-- BRAKES -->
 			<div class="col-md-4">
-				<div class="blockRed div350">
+				<div class="blockRed div350 wow fadeInRight">
 					<div class="voucherHeading">
 						<h3>Exclusively for PARTS4U</h3>
 					</div>
@@ -135,13 +147,13 @@
 
 		<div class="row">
 			<div class="col-md-7">
-				<div class="blockGrey" id="about">
+				<div class="blockGrey wow fadeInLeft" id="about">
 					<h1>About PARTS4U</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel pellentesque diam. Curabitur non diam vehicula, dapibus enim ac, blandit tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis tellus. Maecenas blandit urna enim, nec aliquam enim finibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel pellentesque diam. Curabitur non diam vehicula, dapibus enim ac, bunc sodales facilisis suscipit. Morbi mattiser euismod lectus, quis interdum tortor congue sit amet. Maecenas blandit urna enim, nec aliquam enim finibus id.</p>
 				</div>
 			</div>
 			<div class="col-md-5">
-				<div id="signUpForm">
+				<div id="signUpForm" class="wow fadeInRight">
 					<h1>Join PARTS4U for Free</h1>
 					<h3><a class="cta-white" href="#">Sign up</a></h3>
 					<form id="memberForm">							
@@ -169,126 +181,113 @@
 				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 			</div>
 			<div class="col-md-7">
-				<img class="imgResponsive" src="assets/images/magazine_v2.png" alt="magazine"/>
+				<img class="imgResponsive wow fadeInRight" src="assets/images/magazine_v2.png" alt="magazine"/>
 			</div>
 		</div>
 
 
-<!-- Parts row 1 -->
+<!-- Parts scroller -->
 
 		<div class="row">
-			<!-- CLUTCH -->
-			<div class="col-md-3">
-				<div class="blockRed div250">
-					<div class="voucherHeading">
-						<h4>Exclusively for PARTS4U</h4>
-					</div>
-					<div class="centeredText">
-						<h2>£50 off<br/>Clutch</h2>
-					</div>
-					<div class="voucherLinkDiv">
-						<a href="#">Download voucher <img alt="download icon" src="assets/images/icon_download.png"/></a>
-					</div>
-				</div>
-			</div>
-			<!-- BALL BEARINGS -->
-			<div class="col-md-3">
-				<div class="blockBlue div250">
-					<div class="voucherHeading"></div>
-					<div class="centeredText">
-						<h2>10% off<br/>Ball Bearings</h2>
-					</div>
-					<div class="voucherLinkDiv">
-						<a href="#">Download voucher <img alt="download icon" src="assets/images/icon_download.png"/></a>
+			<div class="col-md-12 responsive">	
+				<div>	
+					<div class="blockRed div250">
+						<div class="voucherHeading">
+							<h4>Exclusively for PARTS4U</h4>
+						</div>
+						<div class="centeredText">
+							<h2>£50 off<br/>Clutch</h2>
+						</div>
+						<div class="voucherLinkDiv">
+							<a href="#">Download voucher <img alt="download icon" src="assets/images/icon_download.png"/></a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<!-- BRAKES -->
-			<div class="col-md-3">
-				<div class="blockRed div250">
-					<div class="voucherHeading">
-						<h4>Exclusively for PARTS4U</h4>
-					</div>
-					<div class="centeredText">
-						<h2>£20 off<br/>Brakes</h2>
-					</div>
-					<div class="voucherLinkDiv">
-						<a href="#">Download voucher <img alt="download icon" src="assets/images/icon_download.png"/></a>
+				<div>
+					<div class="blockBlue div250">
+						<div class="voucherHeading"></div>
+						<div class="centeredText">
+							<h2>10% off<br/>Ball Bearings</h2>
+						</div>
+						<div class="voucherLinkDiv">
+							<a href="#">Download voucher <img alt="download icon" src="assets/images/icon_download.png"/></a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<!-- FILTERS -->
-			<div class="col-md-3">
-				<div class="blockBlue div250">
-					<div class="voucherHeading"></div>
-					<div class="centeredText">
-						<h2>25% off<br/>Filters</h2>
-					</div>
-					<div class="voucherLinkDiv">
-						<a href="#">Download voucher <img alt="download icon" src="assets/images/icon_download.png"/></a>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-<!-- Parts row 2 -->
-
-		<div class="row">
-			<!-- BALL BEARINGS -->
-			<div class="col-md-3">
-				<div class="blockBlue div250">
-					<div class="voucherHeading"></div>
-					<div class="centeredText">
-						<h2>10% off Ball Bearings</h2>
-					</div>
-					<div class="voucherLinkDiv">
-						<a href="#">Download voucher <img alt="download icon" src="assets/images/icon_download.png"/></a>
+				<div>
+					<div class="blockRed div250">
+						<div class="voucherHeading">
+							<h4>Exclusively for PARTS4U</h4>
+						</div>
+						<div class="centeredText">
+							<h2>£20 off<br/>Brakes</h2>
+						</div>
+						<div class="voucherLinkDiv">
+							<a href="#">Download voucher <img alt="download icon" src="assets/images/icon_download.png"/></a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<!-- CLUTCH -->
-			<div class="col-md-3">
-				<div class="blockRed div250">
-					<div class="voucherHeading">
-						<h4>Exclusively for PARTS4U</h4>
-					</div>
-					<div class="centeredText">
-						<h2>£50 off<br/>Clutch</h2>
-					</div>
-					<div class="voucherLinkDiv">
-						<a href="#">Download voucher <img alt="download icon" src="assets/images/icon_download.png"/></a>
+				<div>
+					<div class="blockBlue div250">
+						<div class="voucherHeading"></div>
+						<div class="centeredText">
+							<h2>25% off<br/>Filters</h2>
+						</div>
+						<div class="voucherLinkDiv">
+							<a href="#">Download voucher <img alt="download icon" src="assets/images/icon_download.png"/></a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<!-- FILTERS -->
-			<div class="col-md-3">
-				<div class="blockBlue div250">
-					<div class="voucherHeading"></div>
-					<div class="centeredText">
-						<h2>25% off<br/>Filters</h2>
-					</div>
-					<div class="voucherLinkDiv">
-						<a href="#">Download voucher <img alt="download icon" src="assets/images/icon_download.png"/></a>
-					</div>
+				<div>
+					<div class="blockRed div250">
+						<div class="voucherHeading">
+							<h4>Exclusively for PARTS4U</h4>
+						</div>
+						<div class="centeredText">
+							<h2>£50 off<br/>Clutch</h2>
+						</div>
+						<div class="voucherLinkDiv">
+							<a href="#">Download voucher <img alt="download icon" src="assets/images/icon_download.png"/></a>
+						</div>
+					</div>				
 				</div>
-			</div>
-			<!-- BRAKES -->
-			<div class="col-md-3">
-				<div class="blockRed div250">
-					<div class="voucherHeading">
-						<h4>Exclusively for PARTS4U</h4>
-					</div>
-					<div class="centeredText">
-						<h2>£20 off<br/>Brakes</h2>
-					</div>
-					<div class="voucherLinkDiv">
-						<a href="#">Download voucher <img alt="download icon" src="assets/images/icon_download.png"/></a>
-					</div>
+				<div>
+					<div class="blockBlue div250">
+						<div class="voucherHeading"></div>
+						<div class="centeredText">
+							<h2>25% off<br/>Filters</h2>
+						</div>
+						<div class="voucherLinkDiv">
+							<a href="#">Download voucher <img alt="download icon" src="assets/images/icon_download.png"/></a>
+						</div>
+					</div>				
+				</div>
+				<div>
+					<div class="blockRed div250">
+						<div class="voucherHeading">
+							<h4>Exclusively for PARTS4U</h4>
+						</div>
+						<div class="centeredText">
+							<h2>£20 off<br/>Brakes</h2>
+						</div>
+						<div class="voucherLinkDiv">
+							<a href="#">Download voucher <img alt="download icon" src="assets/images/icon_download.png"/></a>
+						</div>
+					</div>				
+				</div>
+				<div>
+					<div class="blockBlue div250">
+						<div class="voucherHeading"></div>
+						<div class="centeredText">
+							<h2>10% off Ball Bearings</h2>
+						</div>
+						<div class="voucherLinkDiv">
+							<a href="#">Download voucher <img alt="download icon" src="assets/images/icon_download.png"/></a>
+						</div>
+					</div>				
 				</div>
 			</div>
 		</div>
-
 
 		<!-- FOOTER -->
 		<footer>
@@ -357,6 +356,12 @@
 		</div>
 
 	</div>
-	
+
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/slick.min.js"></script>
+	<script type="text/javascript" src="assets/js/slick-init.js"></script>
+
 </body>
 </html>

@@ -1,4 +1,4 @@
-// Scripts - Greenlight Digital banner test
+// Scripts - Stream banner test
 
 // JavaScript Document
 
@@ -11,87 +11,8 @@ function init() {
 		van,
 		logo;
 
-	if (screen.width > 992) {
-		stage = new createjs.Stage("banner728x90");
-
-		// Assign truck
-		truck = new createjs.Bitmap("assets/images/renaultTruck.png");
-		truck.x = 20;
-		truck.y = 5;
-		stage.addChild(truck);
-
-		// Assign van
-		van = new createjs.Bitmap("assets/images/renaultVan.png");
-		van.x = 570;
-		van.y = 5;
-		stage.addChild(van);
-
-		// Assign logo
-		logo = new createjs.Bitmap("assets/images/logoBannerL.png");
-		logo.x = 223;
-		logo.y = 20;
-		stage.addChild(logo);
-
-		// Animate truck
-		createjs.Tween.get(truck, { loop: false })
-		  	.to({ alpha: 0, y: 5, x: -200 }, 0)
-		  	.to({ alpha: 1, y: 5, x: 20 }, 1500, createjs.Ease.getPowInOut(10))
-
-		// Animate van
-		createjs.Tween.get(van, { loop: false })
-		  	.to({ alpha: 0, y: 5, x: 790 }, 0)
-		  	.to({ alpha: 1, y: 5, x: 570 }, 1500, createjs.Ease.getPowInOut(10))
-
-		// Animate logo
-		createjs.Tween.get(logo, { loop: false })
-		  	.to({ alpha: 0, y: -100 }, 0)
-		  	.to({ alpha: 1, y: 20 }, 2000, createjs.Ease.getPowInOut(5))
-
-		createjs.Ticker.setFPS(60);
-		createjs.Ticker.addEventListener("tick", stage);
-	}
-
-	else if (screen.width < 992 && screen.width > 768) {
-		stage = new createjs.Stage("banner468x60");
-
-		// Assign truck
-		truck = new createjs.Bitmap("assets/images/renaultTruckM.png");
-		truck.x = 20;
-		truck.y = 5;
-		stage.addChild(truck);
-
-		// Assign van
-		van = new createjs.Bitmap("assets/images/renaultVanM.png");
-		van.x = 360;
-		van.y = 5;
-		stage.addChild(van);
-
-		// Assign logo
-		logo = new createjs.Bitmap("assets/images/logoBannerM.png");
-		logo.x = 150;
-		logo.y = 15;
-		stage.addChild(logo);
-
-		// Animate truck
-		createjs.Tween.get(truck, { loop: false })
-		  	.to({ alpha: 0, y: 5, x: -200 }, 0)
-		  	.to({ alpha: 1, y: 5, x: 20 }, 1500, createjs.Ease.getPowInOut(10))
-
-		// Animate van
-		createjs.Tween.get(van, { loop: false })
-		  	.to({ alpha: 0, y: 5, x: 580 }, 0)
-		  	.to({ alpha: 1, y: 5, x: 360 }, 1500, createjs.Ease.getPowInOut(10))
-
-		// Animate logo
-		createjs.Tween.get(logo, { loop: false })
-		  	.to({ alpha: 0, y: -100 }, 0)
-		  	.to({ alpha: 1, y: 15 }, 2000, createjs.Ease.getPowInOut(5))
-
-		createjs.Ticker.setFPS(60);
-		createjs.Ticker.addEventListener("tick", stage);
-	}
-
-	else {
+	if (document.documentElement.clientWidth < 768) {
+		
 		stage = new createjs.Stage("banner300x100");
 
 		// Assign truck
@@ -132,5 +53,86 @@ function init() {
 
 		createjs.Ticker.setFPS(60);
 		createjs.Ticker.addEventListener("tick", stage);
+	
+	} else if (document.documentElement.clientWidth > 768 && document.documentElement.clientWidth < 992) {
+
+			stage = new createjs.Stage("banner468x60");
+
+			// Assign truck
+			truck = new createjs.Bitmap("assets/images/renaultTruckM.png");
+			truck.x = 20;
+			truck.y = 5;
+			stage.addChild(truck);
+
+			// Assign van
+			van = new createjs.Bitmap("assets/images/renaultVanM.png");
+			van.x = 360;
+			van.y = 5;
+			stage.addChild(van);
+
+			// Assign logo
+			logo = new createjs.Bitmap("assets/images/logoBannerM.png");
+			logo.x = 150;
+			logo.y = 15;
+			stage.addChild(logo);
+
+			// Animate truck
+			createjs.Tween.get(truck, { loop: false })
+			  	.to({ alpha: 0, y: 5, x: -200 }, 0)
+			  	.to({ alpha: 1, y: 5, x: 20 }, 1500, createjs.Ease.getPowInOut(10))
+
+			// Animate van
+			createjs.Tween.get(van, { loop: false })
+			  	.to({ alpha: 0, y: 5, x: 580 }, 0)
+			  	.to({ alpha: 1, y: 5, x: 360 }, 1500, createjs.Ease.getPowInOut(10))
+
+			// Animate logo
+			createjs.Tween.get(logo, { loop: false })
+			  	.to({ alpha: 0, y: -100 }, 0)
+			  	.to({ alpha: 1, y: 15 }, 2000, createjs.Ease.getPowInOut(5))
+
+			createjs.Ticker.setFPS(60);
+			createjs.Ticker.addEventListener("tick", stage);
+
+	} else {
+
+			stage = new createjs.Stage("banner728x90");
+
+			// Assign truck
+			truck = new createjs.Bitmap("assets/images/renaultTruck.png");
+			truck.x = 20;
+			truck.y = 5;
+			stage.addChild(truck);
+
+			// Assign van
+			van = new createjs.Bitmap("assets/images/renaultVan.png");
+			van.x = 570;
+			van.y = 5;
+			stage.addChild(van);
+
+			// Assign logo
+			logo = new createjs.Bitmap("assets/images/logoBannerL.png");
+			logo.x = 223;
+			logo.y = 20;
+			stage.addChild(logo);
+
+			// Animate truck
+			createjs.Tween.get(truck, { loop: false })
+			  	.to({ alpha: 0, y: 5, x: -200 }, 0)
+			  	.to({ alpha: 1, y: 5, x: 20 }, 1500, createjs.Ease.getPowInOut(10))
+
+			// Animate van
+			createjs.Tween.get(van, { loop: false })
+			  	.to({ alpha: 0, y: 5, x: 790 }, 0)
+			  	.to({ alpha: 1, y: 5, x: 570 }, 1500, createjs.Ease.getPowInOut(10))
+
+			// Animate logo
+			createjs.Tween.get(logo, { loop: false })
+			  	.to({ alpha: 0, y: -100 }, 0)
+			  	.to({ alpha: 1, y: 20 }, 2000, createjs.Ease.getPowInOut(5))
+
+			createjs.Ticker.setFPS(60);
+			createjs.Ticker.addEventListener("tick", stage);
+
 	}
-}
+};
